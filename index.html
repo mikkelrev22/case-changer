@@ -2,17 +2,27 @@
 <html>
   <head>
 
-  </head>
-    <script src="./js/index.js"></script>
+    <script src="./js/nouns.js" defer></script>
+    <script src="./js/form.js" defer></script>
+    <meta charset="UTF-8"/>
     <link rel="stylesheet" href="./css/index.css" />
+    <title><Case-changer></title>
+
+  </head>
   <body>
     <form>
-      <input id="first-num" type="input" placeholder="Pick a number"/>
-      <input id="second-num" type="input" placeholder="Pick another number"/>
-      <button id="button" type="submit">Add</button>
+      <input type="text" id="russian-noun" placeholder="Insert Russian noun here" />
+      <!-- to do: for radios, add label -->
+        <input type="radio" name="case" value= '0'/>
+        <input type="radio" name="case" value= '1'/>
+        <input type="radio" name="case" value= '2'/>
+        <input type="radio" name="case" value= '3'/>
+        <input type="radio" name="case" value= '4'/>
+        <input type="radio" name="case" value= '5'/>
+      <button id="button" type="submit">Change case</button>
     </form>
-    <p id="sum"></p>
-
+    <p id="new-noun"></p>
+    
   </body>
 
 </html>
